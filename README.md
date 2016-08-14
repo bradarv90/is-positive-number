@@ -21,16 +21,19 @@ isPositiveNumber(0) // = true
 
 isPositiveNumber(1.2) // = true
 
+isPositiveNumber(-0) // = false
+
 isPositiveNumber(-1) // = false
 
 isPositiveNumber(-1.2) // = false
 
-isPositiveNumber({ a: 1 }) // = throws TypeError
+isPositiveNumber({ a: 1 }) // throws TypeError
 
-isPositiveNumber(false) // = throws TypeError
+isPositiveNumber(false) // throws TypeError
 
-isPositiveNumber(true) // = throws TypeError
+isPositiveNumber(true) // throws TypeError
 ```
 
 ## Important note
-This module throws a TypeError when the parameter isn't a number. 
+This module throws a TypeError when the parameter isn't a number.
+Also, this returns false for -0.

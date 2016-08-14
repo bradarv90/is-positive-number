@@ -1,6 +1,6 @@
 {
   "name": "is-positive-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Function that tells if an object is a number and positive",
   "main": "index.js",
   "scripts": {
