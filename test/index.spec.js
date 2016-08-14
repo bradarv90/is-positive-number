@@ -8,8 +8,12 @@ describe('is-positive-number', function() {
     assert.equal(isPositiveNumber(Number(1)), true);
   });
 
-  it('should return true for zero', function() {
+  it('should return true for positive zero', function() {
     assert.equal(isPositiveNumber(0), true);
+  });
+
+  it('should return false for negative zero', function() {
+    assert.equal(isPositiveNumber(-0), false);
   });
 
   it('should return false for negative numbers', function() {
