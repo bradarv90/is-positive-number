@@ -35,5 +35,5 @@ isPositiveNumber(true) // throws TypeError
 ```
 
 ## Important note
-This module throws a TypeError when the parameter isn't a number.
-Also, this returns false for -0.
+ * This module throws a TypeError when the parameter isn't a number.
+ * Also, this returns false for -0.
